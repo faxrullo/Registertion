@@ -75,7 +75,7 @@ class project(QMainWindow):
         self.com=QComboBox(self)
         self.com.setGeometry(170,330,250,40)
         self.com.setFont(QFont("Times New Roman",18))
-        self.com.setStyleSheet("color: Lime;background-color: white;")
+        self.com.setStyleSheet("color: rgb(0,0,128);background-color: white;")
         self.com.addItems(project.country)
         self.result=QLabel(self)
         self.result.setGeometry(130,560,250,50)
@@ -124,7 +124,7 @@ class project(QMainWindow):
             f.writelines(project.res)
         else:
             self.result.setText("Faylga yozilmadi")
-            
+
 app=QApplication(sys.argv)
 registration=project()
 registration.show()
